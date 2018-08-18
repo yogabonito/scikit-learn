@@ -67,12 +67,12 @@ following:
      it to check that the results of the compiled extension are consistent
      with the gold standard, easy to debug Python version.
 
-  5. Once the code is optimized (not simple bottleneck spottable by
+  5. Once the code is optimized (no simple bottleneck spottable by
      profiling), check whether it is possible to have **coarse grained
      parallelism** that is amenable to **multi-processing** by using the
      ``joblib.Parallel`` class.
 
-When using Cython, use either
+When using Cython, use either::
 
    $ python setup.py build_ext -i
    $ python setup.py install
